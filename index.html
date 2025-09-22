@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meowww</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="splash">
+  <h1>Click to Enter</h1>
+</div>
+
+
+  <div class="card">
+    <div class="banner">
+      <img src="standard.gif" alt="KHSSKI Banner" class="banner-img">
+    </div>
+
+    <div class="profile">
+      <img class="avatar" src="Muharram for Misaki Nakahara.jpeg" alt="Profile Avatar">
+      <span class="status">leaveme2bleed</span>
+    </div>
+
+    <div class="info">
+      <h2>котенок</h2>
+      <p class="tag">khsski • your face is so dull.</p>
+
+      <div class="ascii">
+        <pre>
+｡ ﾟﾟ･｡･ﾟﾟ｡
+ﾟ。  bella
+ ․ ﾟ･｡･
+
+html and css is kinda tuff
+
+b, d, n, e, >_
+     e, l ,p , z 
+
+guns.lol/atomicfemboy
+        </pre>
+      </div>
+  </div>
+</body>
+</html>
+
+  <audio id="bg-music" src="7days.mp3" loop></audio>
+
+  <script>
+    const splash = document.getElementById('splash');
+    const music = document.getElementById('bg-music');
+
+    splash.addEventListener('click', () => {
+      music.play().catch(err => {
+        console.warn("Autoplay prevented:", err);
+      });
+
+      splash.classList.add('fade-out');
+      setTimeout(() => {
+        splash.style.display = 'none';
+      }, 800);
+    });
+  </script>
+</body>
+</html>
